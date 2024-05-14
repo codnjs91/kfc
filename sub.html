@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> KFC_Sub </title>
+
+  <!-- 스타일시트 연결 -->
+  <link rel="stylesheet" href="css/sub_header.css">
+  <link rel="stylesheet" href="css/sub.css">
+  
+  <!-- 자바스크립트 연결 -->
+  <script defer src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script defer src="js/index.js"></script>
+
+  <!-- 아이온 아이콘 -->
+  <script type='module' src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <!-- 구글 아이콘 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- 구글폰트 연결 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  
+  <!--          헤더          -->
+<header>
+
+<!-- 배너 -->
+  <div id="hd_bn" class="w1300">
+    <span> KFC 다양한 메뉴를 배달로 만나세요!
+      DELIVERY MENU </span>
+  </div>
+  <div id="head_box">
+    <div class="head dp_f w1300">
+      
+      <!-- 로고 -->
+      <h1> <a href="index.html"> <img src="img/logo1.png" alt="KFC로고입니다."> </a> </h1>
+
+      <!-- 배경무늬 -->
+      <ul class="bg dp_f">
+        <li>  </li>
+        <li>  </li>
+        <li>  </li>
+      </ul>
+    </div>
+  </div>
+
+
+<!--          메인메뉴          -->
+  <nav>
+    <div id="main_menu" class="w1300 dp_f">
+    <!-- 햄버거메뉴 -->
+    <a href="#"> <span class="material-symbols-outlined"> menu </span> </a>
+    <!-- 메뉴리스트 -->
+    <ul class="mu_list dp_f">
+      <li> <a href="#"> DELIVERY </a>
+        <ul class="sub_menu">
+          <li> <a href="#"> 추천메뉴 </a> </li>
+          <li> <a href="#"> 치킨 & 세트 </a> </li>
+          <li> <a href="#"> 버거 & 세트 </a> </li>
+          <li> <a href="#"> 스낵 & 사이드 </a> </li>
+          <li> <a href="#"> 음료 </a> </li>
+        </ul>
+      </li>
+
+      <li> <a href="#"> STORE </a>
+        <ul class="sub_menu">
+          <li> <a href="#"> 매장찾기 </a> </li>
+        </ul>
+      </li>
+
+      <li> <a href="#"> EVENT </a>
+        <ul class="sub_menu">
+          <li> <a href="#"> 프로모션 </a> </li>
+          <li> <a href="#"> 새소식 </a> </li>
+          <li> <a href="#"> 공지(공고)사항 </a> </li>
+        </ul>
+      </li>
+
+      <li> <a href="#"> KFC SERVICE </a>
+        <ul class="sub_menu">
+          <li> <a href="#"> 멤버십 </a> </li>
+          <li> <a href="#"> 카드 & 상품권 </a> </li>
+          <li> <a href="#"> KFC TIP </a> </li>
+          <li> <a href="#"> 고객센터 </a> </li>
+          <li> <a href="#"> 전체 메뉴 보기 </a> </li>
+        </ul>
+      </li>
+
+      <li> <a href="#"> 가맹 및 입점 문의 </a>
+        <ul class="sub_menu">
+          <li> <a href="#"> 가맹 상담 문의 </a> </li>
+          <li> <a href="#"> 임대 상담 문의 </a> </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- 검색 -->
+    <div class="search">
+      <input type="text">
+      <a href="#">
+        <i class="fa-solid fa-magnifying-glass"> </i>
+      </a>
+    </div>
+    
+    <!-- 드롭박스 -->
+    <div id="drop_box">  </div>
+    </div>
+  </nav>
+
+</header>
+<!--          /헤더          -->
+
+
+<!--          비주얼          -->
+<article id="visual">
+  <img src="img/sub_slider.png" alt="">
+</article>
+
+
+<!--          추천메뉴          -->
+<section id="best" class="w1300">
+
+  <h1> 추천메뉴 </h1>
+  <p> KFC의 추천 상품 놓치지 않으셨으면 좋겠어요. </p>
+
+  <div class="best_box w1300 dp_f">
+
+    <div class="best_list">
+      <div class="img_wrap">
+        <a href="#"> <img src="img/best1.png" alt="불고기세트 이미지입니다."> </a>
+      </div>
+      <h2> 불고기세트 </h2>
+      <p> 불고기버거+프렌치프라이M+콜라M </p>
+      <h3> <i class="fa-solid fa-won-sign"></i> 6,600원 </h3>
+    </div>
+
+    <div class="best_list">
+      <div class="img_wrap">
+        <a href="#"> <img src="img/best2.png" alt="불고기세트 이미지입니다."> </a>
+      </div>
+      <h2> 징거BTL박스 </h2>
+      <p> 불고기버거+프렌치프라이M+콜라M </p>
+      <h3> <i class="fa-solid fa-won-sign"></i> 1,100원 </h3>
+    </div>
+
+    <div class="best_list">
+      <div class="img_wrap">
+        <a href="#"> <img src="img/best3.png" alt="불고기세트 이미지입니다."> </a>
+      </div>
+      <h2> 패밀리팩 </h2>
+      <p> 불고기버거+프렌치프라이M+콜라M </p>
+      <h3> <i class="fa-solid fa-won-sign"></i> 32,800원 </h3>
+    </div>
+
+  </div>
+
+  <div class="best_box w1300 dp_f">
+
+    <div class="best_list">
+      <div class="img_wrap">
+        <a href="#"> <img src="img/best4.png" alt="불고기세트 이미지입니다."> </a>
+      </div>
+      <h2> 트위스터박스 </h2>
+      <p> 불고기버거+프렌치프라이M+콜라M </p>
+      <h3> <i class="fa-solid fa-won-sign"></i> 8,600원 </h3>
+    </div>
+
+    <div class="best_list">
+      <div class="img_wrap">
+        <a href="#"> <img src="img/best5.png" alt="불고기세트 이미지입니다."> </a>
+      </div>
+      <h2> 징거더블다운맥스 </h2>
+      <p> 불고기버거+프렌치프라이M+콜라M </p>
+      <h3> <i class="fa-solid fa-won-sign"></i> 7,500원 </h3>
+    </div>
+
+    <div class="best_list">
+      <div class="img_wrap">
+        <a href="#"> <img src="img/best6.png" alt="불고기세트 이미지입니다."> </a>
+      </div>
+      <h2> KFC베스트팩 </h2>
+      <p> 불고기버거+프렌치프라이M+콜라M </p>
+      <h3> <i class="fa-solid fa-won-sign"></i> 25,500원 </h3>
+    </div>
+
+  </div>
+
+  <div class="best_box w1300 dp_f">
+
+    <div class="best_list">
+      <div class="img_wrap">
+        <a href="#"> <img src="img/best7.png" alt="불고기세트 이미지입니다."> </a>
+      </div>
+      <h2> 블랙라벨폴인치즈박스 </h2>
+      <p> 불고기버거+프렌치프라이M+콜라M </p>
+      <h3> <i class="fa-solid fa-won-sign"></i> 12,000원 </h3>
+    </div>
+
+    <div class="best_list">
+      <div class="img_wrap">
+        <a href="#"> <img src="img/best8.png" alt="불고기세트 이미지입니다."> </a>
+      </div>
+      <h2> KFC추천팩 </h2>
+      <p> 불고기버거+프렌치프라이M+콜라M </p>
+      <h3> <i class="fa-solid fa-won-sign"></i> 17,900원 </h3>
+    </div>
+
+    <div class="best_list">
+      <div class="img_wrap">
+        <a href="#"> <img src="img/best9.png" alt="불고기세트 이미지입니다."> </a>
+      </div>
+      <h2> 캔터키통다리스파이시박스 </h2>
+      <p> 불고기버거+프렌치프라이M+콜라M </p>
+      <h3> <i class="fa-solid fa-won-sign"></i> 11,300원 </h3>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!--          푸터          -->
+<footer>
+
+  <ul class="ft_text dp_f">
+    <li> </li><a href="#"> 개인정보처리방침  </a> </li>
+    <li> </li><a href="#"> 사이트 이용약관  </a> </li>
+    <li> </li><a href="#"> 위치정보 이용약관  </a> </li>
+    <li> </li><a href="#"> KFC 선불카드 이용약관  </a> </li>
+    <li> </li><a href="#"> 운영관리 방침  </a> </li>
+  </ul>
+
+  <p>
+    대전광역시 중구 선화동123,2F KFC
+    사업자등록번호: 123-45-678910 / 주식회사 케이에프씨코리아 <br>
+    대표자: 홍길동 TEL: 02)1234-5678 월~금 09:00 ~ 12:00, 13:00 ~ 17:00 공휴일 제외 / FAX: 02)1234-5678C
+  </p>
+
+  <span> ⓒ 2024 KFC KOREA co.kr </span>
+
+</footer>
+
+
+<!--          스크롤 바          -->
+<button id="scrollToTop" class="top"> &#8679; </button>
+<button id="scrollToDown" class="down"> &#8681; </button>
+
+</body>
+</html>
