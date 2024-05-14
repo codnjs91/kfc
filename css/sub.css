@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/*           기본 스타일           */
+* { 
+  margin: 0; padding: 0; box-sizing: border-box; 
+  font-family: "Do Hyeon", sans-serif; 
+  font-style: normal; letter-spacing: 1px;
+}
+ul { list-style: none; }
+a { text-decoration: none; color: #000; }
+
+
+/*           내가 만든 스타일           */
+.w1300 { width: 1300px; margin: auto; }
+.dp_f { display: flex; }
+
+
+/*          비주얼          */
+#visual {
+  width: 100vw; height: 420px;
+}
+
+#visual img{
+  width: 100%; height: 100%;
+}
+
+
+/*          추천메뉴          */
+#best {
+  height: 1800px;
+  margin-top: 100px;
+}
+
+#best h1 {
+  font-size: 60px;
+  text-align: center;
+  -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+#best>p {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+  -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+/* 글자 애니메이션 */
+@-webkit-keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+    transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+    transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* 버거 이미지 박스 */
+.best_box {
+
+  justify-content: space-between;
+  margin-bottom: 220px;
+  /* border: #C20000 1px solid; */
+}
+
+
+.best_box .best_list {
+  width: 420px; height: 320px;
+  text-align: center;
+  /* border: blue 1px solid; */
+}
+
+.best_box .best_list .img_wrap {
+  width: 100%; height: 100%;
+}
+.best_box .best_list .img_wrap:hover {
+  -webkit-animation: jello-horizontal 0.9s both;
+	animation: jello-horizontal 0.9s both;
+}
+
+/* 젤리 버거 띠용 */
+@keyframes jello-horizontal {
+  0% { transform: scale3d(1, 1, 1); }
+  30% { transform: scale3d(1.25, 0.75, 1); }
+  40% { transform: scale3d(0.75, 1.25, 1); }
+  50% { transform: scale3d(1.15, 0.85, 1); }
+  65% { transform: scale3d(0.95, 1.05, 1); }
+  75% { transform: scale3d(1.05, 0.95, 1); }
+  100% { transform: scale3d(1, 1, 1); }
+}
+
+.best_box .best_list .img_wrap a {
+  display: inline-block;
+  width: 100%; height: 100%;
+}
+.best_box .best_list .img_wrap img {
+  width: 100%; height: 100%;
+}
+.best_box .best_list h2 {
+  padding-top: 20px;
+  font-size: 28px;
+}
+.best_box .best_list p {
+  padding-top: 5px;
+  font-family: "sans-serif"; font-size: 18px;
+  color: #999;
+}
+.best_box .best_list h3 {
+  padding-top: 20px;
+  font-size: 23px;
+}
+.best_box .best_list h3 i {
+  color: #C20000;
+}
+
+
+/*          푸터          */
+footer {
+  width: 100%; height: 200px;
+  padding-top: 60px;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+
+footer .ft_text {
+  width: 100%;
+  justify-content: center;
+}
+footer .ft_text a {
+  display: block;
+  width: 200px;
+  border-right: 1px solid #fff;
+  font-size: 14px; font-family: "sans-serif"; 
+  color: #fff;
+}
+footer .ft_text a:last-child {
+  border-right: 0;
+}
+
+footer p { 
+  margin-top: 15px;
+  font-size: 14px; font-family: "sans-serif"; 
+}
+footer span { 
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 14px; font-family: "sans-serif"; 
+}
+
+
